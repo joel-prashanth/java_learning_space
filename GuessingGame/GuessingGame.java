@@ -14,11 +14,19 @@ public class GuessingGame {
 
             System.out.println("Guess a nuber between 1-10");
             userGuess = sc.nextInt();
+
+            if( userGuess == guessNumber){
+                System.out.println("You did it!");
+            }
+            else if(userGuess < guessNumber){
+                System.out.println("Your guess is lower");
+            }
+            else{
+                System.out.println("Your guess is higher!");
+            }
         }
 
-        if( userGuess == guessNumber){
-            System.out.println("You did it!");
-        }
+
         sc.close();
 
         
